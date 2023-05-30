@@ -10,6 +10,7 @@
   "private": true,
   "dependencies": {
     "@opennetwork/happening": "^1.0.0-alpha.0",
+    "@socialbaking/vouch": "^1.0.0-alpha.63",
     "dotenv": "^16.0.3"
   }
 }

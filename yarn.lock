@@ -63,7 +63,7 @@
   dependencies:
     fast-json-stringify "^5.7.0"
 
-"@fastify/helmet@^10.1.1":
+"@fastify/helmet@^10.1.0", "@fastify/helmet@^10.1.1":
   version "10.1.1"
   resolved "https://registry.yarnpkg.com/@fastify/helmet/-/helmet-10.1.1.tgz#3028fa5ab4100214a9dec1fea27ebcd983e58e9b"
   integrity sha512-z9abyIlCHPU25llOTyo3uz8F8TJ+uDqtOC4+38dxODPw8Ro9sTZjbm2U7ZIF0IAv3/E0ke6vbUQ4sB376WuKJA==
@@ -1095,6 +1095,35 @@
   resolved "https://registry.yarnpkg.com/@sideway/pinpoint/-/pinpoint-2.0.0.tgz#cff8ffadc372ad29fd3f78277aeb29e632cc70df"
   integrity sha512-RNiOoTPkptFtSVzQevY/yWtZwf/RxyVnPy/OcA9HBM3MlGDnBEYL5B41H0MTn0Uec8Hi+2qUtTfG2WWZBmMejQ==
 
+"@socialbaking/vouch@^1.0.0-alpha.63":
+  version "1.0.0-alpha.63"
+  resolved "https://registry.yarnpkg.com/@socialbaking/vouch/-/vouch-1.0.0-alpha.63.tgz#1e21a0716afc376ab43ec6082ed6321d46a31d8c"
+  integrity sha512-vByW6Rc1kt5O2YKW0o6wGazEc7u1LE/1Z83Scckysv7HbSM4NjaEW4SB3Qe51l41SqIHxmet4+mMdk4FggRDxg==
+  dependencies:
+    "@fastify/auth" "^4.2.0"
+    "@fastify/bearer-auth" "^9.0.0"
+    "@fastify/cors" "^8.2.1"
+    "@fastify/helmet" "^10.1.0"
+    "@fastify/request-context" "^4.2.0"
+    "@fastify/swagger" "^8.3.1"
+    "@fastify/swagger-ui" "^1.8.0"
+    "@kvs/env" "^2.1.3"
+    "@kvs/types" "^2.1.1"
+    "@virtualstate/focus" "^1.4.10-alpha.4"
+    "@virtualstate/listen" "^1.0.0-alpha.14"
+    "@virtualstate/promise" "^1.2.1"
+    abort-controller "^3.0.0"
+    dotenv "^16.0.3"
+    fastify "^4.17.0"
+    fastify-blipp "^4.0.0"
+    fastify-helmet "^7.1.0"
+    human-readable-ids "^1.0.4"
+    json-schema-to-ts "^2.8.0"
+    redis "^4.6.6"
+    tmp "^0.2.1"
+    uuid "^8.3.2"
+    whatwg-url "^9.1.0"
+
 "@types/accepts@*":
   version "1.3.5"
   resolved "https://registry.yarnpkg.com/@types/accepts/-/accepts-1.3.5.tgz#c34bec115cfc746e04fe5a059df4ce7e7b391575"
@@ -1385,7 +1414,23 @@
   dependencies:
     "@upstash/redis" "1.20.6"
 
-"@virtualstate/promise@^1.3.3":
+"@virtualstate/focus@^1.4.10-alpha.4":
+  version "1.4.10-alpha.4"
+  resolved "https://registry.yarnpkg.com/@virtualstate/focus/-/focus-1.4.10-alpha.4.tgz#3e3f36ee89e06e6324dde944eb59b5fdf036fd69"
+  integrity sha512-6MvDFBLYje0+R4xa32Ka8lT2NqPY6mgEAltblfKIy/LeJTVoc/OoUXzQzH8eNwkk1q2ATR2zmdpWlQGUf4RlVw==
+
+"@virtualstate/listen@^1.0.0-alpha.14":
+  version "1.0.0-alpha.14"
+  resolved "https://registry.yarnpkg.com/@virtualstate/listen/-/listen-1.0.0-alpha.14.tgz#a4ca90f21349542d7911290e4983045bbf5eb6b7"
+  integrity sha512-CSEhpCF8aald9hqoE/7f7CeCnFgWweZS4NkJXNi2meT4l2thVlRgFPnHEFhhFHWV1S8ubSUZTA+Xv9uVW9cgxg==
+  dependencies:
+    "@virtualstate/focus" "^1.4.10-alpha.4"
+    "@virtualstate/promise" "^1.2.1"
+    abort-controller "^3.0.0"
+    uuid "^8.3.2"
+    whatwg-url "^9.1.0"
+
+"@virtualstate/promise@^1.2.1", "@virtualstate/promise@^1.3.3":
   version "1.3.3"
   resolved "https://registry.yarnpkg.com/@virtualstate/promise/-/promise-1.3.3.tgz#1346dac928884eadbaff3aef397a35a9e9ffe615"
   integrity sha512-69Fo75i+WsiJmdObw/EptMSCzgLAvqsAOOHB5qoT2B1oCTfoN2VDjHji4GQSLD4/o7OKU9r3VKWVooMOOMyhEw==
