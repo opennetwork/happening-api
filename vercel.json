@@ -1,0 +1,14 @@
+{
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/api/index.js"
+    }
+  ],
+  "buildCommand": null,
+  "framework": null,
+  "installCommand": "yarn install",
+  "github": {
+    "silent": true
+  }
+}

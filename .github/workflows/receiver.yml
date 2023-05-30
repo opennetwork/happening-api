@@ -1,0 +1,24 @@
+name: Receiver
+
+on:
+  repository_dispatch:
+    types: [repository_update_event]
+
+jobs:
+  receiver:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - name: A repository update event received
+        # git email needs to be same as at least one email of a vercel member
+        run: |
+          git config --global user.name 'GitHub Action Dependency Updater'
+          git config --global user.email 'hello@fabiancook.dev'
+          git checkout "${GITHUB_REF:11}"
+          yarn
+          yarn add @socialbaking/vouch
+          git add .
+          git diff --quiet && git diff --staged --quiet || git commit -m "Update dependencies"
+          git push
