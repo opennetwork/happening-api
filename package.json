@@ -2,7 +2,7 @@
   "name": "@opennetwork/happening",
   "type": "module",
   "version": "1.0.0",
-  "description": "Vouch Vercel API",
+  "description": "Happening Vercel API",
   "main": "api/index.js",
   "repository": "git@github.com:opennetwork/happening-api.git",
   "author": "Fabian Cook <hello@fabiancook.dev>",
